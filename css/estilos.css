@@ -1,6 +1,113 @@
-*,
- ::after,
- ::before {
+body.dark-mode .carousel-item {
+    background: #23272b !important;
+    color: #f1f1f1 !important;
+    border-radius: 6px;
+}
+body.dark-mode .sliderText {
+    color: #bbb !important;
+}
+body.dark-mode .carousel-item b,
+body.dark-mode .carousel-item p {
+    color: #f1f1f1 !important;
+}
+body.dark-mode .boxLogo,
+body.dark-mode .boxHeader {
+    background: #181818 !important;
+    color: #f1f1f1 !important;
+}
+body.dark-mode .carousel-inner {
+    background: #23272b !important;
+}
+body.dark-mode #miForm,
+body.dark-mode .form-control {
+    background: #23272b !important;
+    color: #f1f1f1 !important;
+    border-color: #444 !important;
+}
+body.dark-mode .form-control::placeholder {
+    color: #bbb !important;
+    opacity: 1;
+}
+body.dark-mode label,
+body.dark-mode .form-group label {
+    color: #f1f1f1 !important;
+}
+.navbar-icon.icon-moon {
+    color: #222;
+    transition: color 0.2s;
+}
+.navbar-icon.icon-moon:hover {
+    color: #20bf6b;
+}
+body.dark-mode {
+    background: #181818;
+    color: #f1f1f1;
+}
+body.dark-mode .navbar,
+body.dark-mode .navbar.fixed-top {
+    background: #23272b !important;
+    color: #f1f1f1;
+}
+body.dark-mode .navbar-nav .nav-link {
+    color: #f1f1f1 !important;
+}
+body.dark-mode .navbar-brand {
+    color: #20bf6b !important;
+}
+body.dark-mode .navbar-icon.icon-moon {
+    color: #f1f1f1;
+}
+body.dark-mode .boxFeatures,
+body.dark-mode .boxAbout,
+body.dark-mode .boxCallToActions,
+body.dark-mode .boxSlider,
+body.dark-mode .boxContacto,
+body.dark-mode .footer {
+    background: #23272b !important;
+    color: #f1f1f1;
+}
+body.dark-mode .cardFeatures,
+body.dark-mode .boxCardCallToActions,
+body.dark-mode .contacto {
+    background: #222 !important;
+    color: #f1f1f1;
+    border-color: #333;
+}
+body.dark-mode a,
+body.dark-mode a:visited {
+    color: #20bf6b;
+}
+body.dark-mode a.botonGetStarted,
+body.dark-mode .botonEnviarMensaje {
+    background: #20bf6b;
+    color: #fff !important;
+    border: 2px solid #20bf6b;
+}
+body.dark-mode a.botonGetStarted:hover,
+body.dark-mode .botonEnviarMensaje:hover {
+    background: transparent;
+    color: #20bf6b !important;
+}
+.navbar-icon {
+    font-size: 1.7rem;
+    color: #20bf6b;
+    margin-left: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.navbar.fixed-top {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+}
+
+/* Cambios: Modo oscuro para los items y textos del carrusel */
+/* Cambios: Modo oscuro para boxLogo, boxHeader, carousel-inner, miForm y entradas */
+/* Cambios: Mejorar visibilidad del icono de modo oscuro */
+/* Cambios: Estilos para modo oscuro */
+/* Cambios: Estilo para el icono a la derecha del navbar */
+/* Cambios: Reducir padding lateral del navbar para centrar mejor el contenido */
+*, ::after, ::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -48,7 +155,7 @@ p {
 }
 
 .current {
-    border-bottom: 2px solid #20bf6b;
+    display: block; /* Cambios: Mostrar siempre el logo en el navbar */
 }
 
 .boxLogo {

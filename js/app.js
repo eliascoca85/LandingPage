@@ -1,4 +1,12 @@
-// AGREGA CLASE boxCardAnimated AL HACER SCROLL PARA ANIMAR COMPONENTE CARD 
+// Cambios: Modo oscuro al hacer clic en el icono de la luna (corregido para .icon-moon-o y ejecutado al final del archivo)
+window.addEventListener('DOMContentLoaded', function() {
+    const darkModeIcon = document.querySelector('.icon-moon-o');
+    if (darkModeIcon) {
+        darkModeIcon.addEventListener('click', function() {
+            document.body.classList.toggle('dark-mode');
+        });
+    }
+});
 window.onscroll = function() {
 
     let scrollPosY = window.pageYOffset | document.body.scrollTop;
@@ -22,7 +30,6 @@ window.onscroll = function() {
 };
 
 
-// AGREGA CLASE current AL HACER SCROLL 
 let mainNavLinks = document.querySelectorAll("nav div ul li a");
 
 window.addEventListener("scroll", event => {
@@ -44,7 +51,6 @@ window.addEventListener("scroll", event => {
 });
 
 
-// DESPLAZAMIENTO SMOOTH SCROLL
 window.onload = function() {
 
     const easeInCubic = function(t) { return t * t * t }
@@ -91,6 +97,16 @@ window.onload = function() {
         })
     }
 }
+
+// Cambios: Modo oscuro al hacer clic en el icono de la luna (corregido para .icon-moon-o y ejecutado al final del archivo)
+window.addEventListener('DOMContentLoaded', function() {
+    const darkModeIcon = document.querySelector('.icon-moon-o');
+    if (darkModeIcon) {
+        darkModeIcon.addEventListener('click', function() {
+            document.body.classList.toggle('dark-mode');
+        });
+    }
+});
 
 function enviarMensaje() {
     alert('Mensaje enviado con éxito!');

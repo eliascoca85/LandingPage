@@ -1,6 +1,7 @@
+
 let texto = document.getElementById('testimonio');
 
-// MÉTODO PARA OBTENER POSTS
+// Cambios: Función para obtener posts
 async function getPosts(id) {
 
     return await fetch(`https://jsonplaceholder.typicode.com/posts?userId=${id}`)
@@ -16,7 +17,7 @@ async function getPosts(id) {
         });
 }
 
-// MÉTODO PARA OBTENER USUARIOS
+// Cambios: Función para obtener usuarios y cargar testimonios
 async function getUsers() {
     await fetch('https://jsonplaceholder.typicode.com/users')
         .then((resp) => {
