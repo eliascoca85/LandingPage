@@ -1,3 +1,11 @@
+## Capturas de pantalla
+
+### Antes
+![Antes](images/Captura.png)
+
+### Después
+![Después](images/Captura2.png)
+
 # landingPage (Modificado)
 
 Este proyecto es un fork y modificación del repositorio original de Oscar Cornejo: [landingPage original](https://github.com/oscarcornejo/landingPage)
